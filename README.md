@@ -48,7 +48,7 @@ The async call being inside the component makes it hard to test the asynchronous
  - [x] 1. You will need to `return` the `axios.get` call, _and_ the data inside your `.then()`. This is necessary because when you call `fetchShow` in your useEffect, you need to chain off the promise for a new `.then()`, then you need the data to be returned once the promise is resolved
  - [x] 1. Inside your `.then()` in the `useEffect` hook, set your data again.
 
-- Note that you need `axios` in the new file
+ - [x] Note that you need `axios` in the new file
 
 This should look something like this:
 
